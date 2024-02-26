@@ -1,0 +1,93 @@
+#table {
+  padding: 90px 0;
+  background: var(--secondaryColor);
+  text-align: center;
+}
+
+.table__desc {
+  padding: 20px 0 20px;
+}
+
+.table__cards {
+  padding: 60px 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 50px;
+}
+
+.table__cards__card {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 8px 0px var(--primaryColor);
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.table__cards__card:hover {
+  background: var(--greenColor);
+}
+
+.table__cards__card:hover * {
+  color: var(--secondaryColor);
+}
+
+.table__card__desc {
+  padding: 10px 0 10px;
+}
+
+.table__card__name {
+  color: var(--primaryColor);
+}
+
+.table__btn {
+  background: var(--greenColor);
+  color: var(--secondaryColor);
+}
+
+.table__cards__card:hover .table__btn {
+  color: var(--greenColor);
+  background: var(--secondaryColor);
+}
+.card__price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card__price__left__title {
+  font-size: 60px;
+  color: var(--greenColor);
+}
+
+.card__price__right__title {
+  text-align: start;
+  font-size: 24px;
+  color: var(--greenColor);
+}
+
+.table__card__info {
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+@media (max-width: 1000px) {
+  .table__cards {
+    padding: 30px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .table__cards {
+    padding: 20px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+}

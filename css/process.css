@@ -1,0 +1,148 @@
+#process {
+  padding: 90px 0;
+  background: rgba(128, 128, 128, 0.104);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+.process__title {
+  text-align: center;
+}
+
+.process__desc {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 16px 0 30px;
+  text-align: center;
+}
+
+.process__users__cards {
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.process__users__cards__card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process__users__user {
+  width: calc(30% - 10px);
+}
+.process__users__user img {
+  width: 80%;
+}
+
+.process__users__comment {
+  width: calc(70% - 10px);
+}
+.process__users__comment img {
+  width: 80%;
+}
+
+.comment2 {
+  order: -1;
+}
+
+.user3 {
+  order: 3;
+}
+
+.strategies__desc {
+  padding: 10px 0 30px;
+}
+
+.owl-carousel .item {
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.owl-carousel .item img {
+  width: 100%;
+  height: 250px;
+}
+.owl-next span,
+.owl-prev span {
+  font-size: 100px;
+  color: var(--primaryColor);
+}
+
+.owl-next:hover .active {
+  background: transparent;
+}
+
+.carusel__item__infos__desc {
+  padding: 20px 0;
+}
+
+.carusel__item__infos__desc span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.carusel__item__infos__title {
+  font-size: 24px;
+  color: var(--primaryColor);
+}
+
+@media (max-width: 950px) {
+  .process__users__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .user3 {
+    order: -1;
+  }
+  .comment4 {
+    order: -1;
+  }
+  .process__users__user img {
+    width: 50%;
+  }
+  .process__users__comment img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 870px) {
+  #process {
+    border-radius: 0;
+  }
+  .carusel__item__infos__title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .process__users__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .user3 {
+    order: -1;
+  }
+  .comment4 {
+    order: -1;
+  }
+  .process__users__user img {
+    width: 80%;
+  }
+  .process__users__comment img {
+    width: 80%;
+  }
+}
+
+.dark #process {
+  background: black;
+}
